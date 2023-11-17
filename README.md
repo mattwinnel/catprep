@@ -4,4 +4,6 @@ To use the code, simply run the 'run_me.m' file in MATLAB. The required function
 The code performs simulations of scheme I and scheme II and plots the output Wigner functions.
 For more details, see the manuscript.
 
-We acknowledge author Matthias.Trampisch@rub.de
+Authors: Matthew S. Winnel, Joshua J. Guanzon, Deepesh Singh, and Timothy C. Ralph
+
+We acknowledge Matthias.Trampisch@rub.de
