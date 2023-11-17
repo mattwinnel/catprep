@@ -1,7 +1,7 @@
 function [ psi_out ] = scheme_II_function(n,dim,eta_total,squeezing_vacuum,squeezing_Fock,ROUND_MAX)
 
 %
-% this function numerically performs scheme I for the preparation of
+% this function numerically performs scheme II for the preparation of
 % optical cat states from ''Deterministic preparation of optical cat and
 % Gottesman-Kitaev-Preskill (GKP) states'' by Winnel et al. (2023).
 
@@ -71,73 +71,6 @@ for ROUND = 1:ROUND_MAX%:10
     theta = A(ROUND);
   
     
-%     
-%     % Josh's results:
-%     if ROUND == 1
-%         theta = 1.59;
-%         m = 2;
-%     elseif ROUND == 2
-%         theta = 2.44;
-%         m = 0;
-%     elseif ROUND == 3
-%         theta = 1.09;
-%         m = 0;
-%     elseif ROUND == 4
-%         theta = 0.14;
-%         m = 0;
-%     elseif ROUND == 5
-%         theta = 2.48
-%         m = 0;
-%     elseif ROUND == 6;
-%         theta = 0.06;
-%         m = 1;
-%     elseif ROUND == 7
-%         theta = 2.14;
-%         m = 0;
-%     elseif ROUND == 8
-%         theta = 3.12;
-%         m = 0;
-%     elseif ROUND == 9;
-%         theta = 1.31;
-%         m = 0;
-%     elseif ROUND == 10;
-%         theta = 1.42;
-%         m = 0;
-%     elseif ROUND == 11;
-%         theta = 0.92;
-%         m = 2;
-%     elseif ROUND == 12;
-%         theta = 2.13;
-%         m = 4;
-%     elseif ROUND == 13
-%         theta = 0.79;
-%         m = 0;
-%     elseif ROUND == 14;
-%         theta = 1.66;
-%         m = 0;
-%     elseif ROUND == 15;
-%         theta = 0.89;
-%         m = 0;
-%     elseif ROUND == 16;
-%         theta = 0.36;
-%         m = 1;
-%     elseif ROUND == 17;
-%         theta = 2.47;
-%         m = 0;
-%     elseif ROUND == 18
-%         theta = 1.04;
-%         m = 0
-%     elseif ROUND == 19
-%         theta = 0.7;
-%         m = 0;
-%     elseif ROUND == 20;
-%         theta = 1.91;
-%         m = 0;
-%     end
-%         MMM = m;
-        
-        
-        
     
     % squeeze vacuum
     % squeeze mode to be measured at angle theta:
