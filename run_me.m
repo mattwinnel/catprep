@@ -21,6 +21,10 @@ disp('displaying output cat for scheme I')
 disp('press any key to continue')
 pause
 
+
+% scheme II
+
+
 n = 14; % input Fock state size
 ROUND_MAX = 100; % number of rounds k
 squeezing_vacuum = 6; % amount of squeezing for squeezed vacuum state in dB
