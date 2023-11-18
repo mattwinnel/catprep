@@ -3,6 +3,8 @@ dim = 30; % dim is the truncation Fock number, i.e., dim = 1 for qubits
 
 % iterative scheme I
 
+% the input state to this iterative scheme I simulation is a Fock state |n>
+
 n = 14; % input Fock state size
 ROUND_MAX = 6; % number of rounds k
 squeezing = 8; % amount of squeezing in dB
@@ -24,6 +26,8 @@ pause
 
 % iterative scheme II
 
+% the input state to this iterative scheme II simulation is a squeezed Fock state S(r)|n>
+% however, note that scheme II works for any input state with odd/even Fock-number parity - make changes to "scheme_II_function" to try
 
 n = 14; % input Fock state size
 ROUND_MAX = 100; % number of rounds k
@@ -35,7 +39,6 @@ eta_total = 0.5; % total transmissivity experienced by the input state
 % compute the output state vector for iterative scheme II
 [ psi_out_scheme_II ] = scheme_II_function(n,dim,eta_total,squeezing_vacuum,squeezing_Fock,ROUND_MAX);
 
-% note that scheme II works for any input state with odd/even Fock-number parity - make changes to "scheme_II_function" to try
 
 % plot Wigner function of output state
 % truncate the output state for faster Wigner function calculation
