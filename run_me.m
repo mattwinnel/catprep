@@ -1,7 +1,7 @@
 
 dim = 30; % dim is the truncation Fock number, i.e., dim = 1 for qubits
 
-% scheme I
+% iterative scheme I
 
 n = 14; % input Fock state size
 ROUND_MAX = 6; % number of rounds k
@@ -22,12 +22,12 @@ disp('press any key to continue')
 pause
 
 
-% scheme II
+% iterative scheme II
 
 
 n = 14; % input Fock state size
 ROUND_MAX = 100; % number of rounds k
-squeezing_vacuum = 6; % amount of squeezing for squeezed vacuum state in dB
+squeezing_vacuum = 6; % amount of squeezing for squeezed vacuum states in dB
 squeezing_Fock = 0; % amount of initial squeezing on the input state in dB
 eta_total = 0.5; % total transmissivity experienced by the input state
 
