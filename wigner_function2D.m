@@ -106,5 +106,7 @@ set(gca,'fontsize',FONT_SIZE_X_LABEL)
 set(gca,'TickLabelInterpreter', 'latex');
 colormap(redblue)
 
+set(gca,'YDir','normal')
+
 end
 
